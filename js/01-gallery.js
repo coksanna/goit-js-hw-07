@@ -34,6 +34,7 @@ function onGalleryClick(event) {
   source.src = event.target.dataset.source;
   source.alt = event.target.alt;
   instance.show();
+  body.addEventListener('keydown', closeModal); 
 }
 
 function closeModal(e) {
@@ -43,7 +44,7 @@ function closeModal(e) {
 };
 
 galleryEl.addEventListener('click', onGalleryClick);
-body.addEventListener('keydown', closeModal);  
+ 
 
 
 
